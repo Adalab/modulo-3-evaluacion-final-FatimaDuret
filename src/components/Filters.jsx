@@ -7,7 +7,7 @@ function Filters({ setSearch }) {
 
   return (
     <form onSubmit={(e) => e.preventDefault()}>
-      <label htmlFor="search">Search Characters:</label>
+      <label htmlFor="search" className="search">Search Characters:</label>
       <input
         type="text"
         id="search"

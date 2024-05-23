@@ -4,6 +4,7 @@ import Filters from './Filters';
 import CharacterDetail from './CharacterDetail';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import '../styles/app.scss';
+import logo from '../images/logo.png'; // Importa la imagen del logo
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -22,12 +23,16 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <header className="app-header">
+          <h1>Rick and Morty Characters</h1>
+        </header>
         <Routes>
           <Route 
             path="/" 
             element={
               <>
                 <Filters setSearch={setSearch} />
+                <img src={logo} className="app-logo" alt="logo" /> {/* Añadir la imagen aquí */}
                 <CharacterList characters={filteredCharacters} />
               </>
             } 

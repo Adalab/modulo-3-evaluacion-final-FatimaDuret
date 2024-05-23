@@ -7,6 +7,21 @@
 .app {
     text-align: center;
     font-family: Arial, sans-serif;
+    background-color: darkslategrey;
+  }
+
+  .search {
+   
+    font-size: 1.5rem;
+    padding-top: 20px;
+    color: white;
+
+  }
+
+  .app-logo {
+    height: 150px;
+    margin: 20px 0;
+    
   }
   
   form {
@@ -26,6 +41,7 @@
     padding: 20px;
     width: 200px;
     text-align: center;
+    background-color: white;
   }
   
   .character-card img {
